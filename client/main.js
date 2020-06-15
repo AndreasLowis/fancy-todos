@@ -1,5 +1,5 @@
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://fancy-todoss.herokuapp.com'
 let todoCurrentId = null
 
 $( document ).ready(function() {
