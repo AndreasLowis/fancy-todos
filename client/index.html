@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="664905079173-e2t6e2tf0op8ci03rs5pnb2a6h5aeqvl.apps.googleusercontent.com">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+      <!-- NAV BAR -->
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+      <!-- ADD EDIT PAGE -->
+
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+
+    <title>Fancy Todo</title>
+</head>
+<body>
+
+
+    <!-- LOGIN PAGE -->
+
+    <section class="login-page">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="./images/logo.png" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form onsubmit="login(event)">
+            <input type="text" id="username" class="fadeIn second" name="username" placeholder="username">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+            <p id="alert"></p>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter" >
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOME PAGE -->
+
+        
+    <section class="home-page">
+            <h1 style="text-align: center;">Todo List</h1> 
+            <nav class="main-navigation">
+                <div class="navbar-header animated fadeInUp">
+                    <a class="navbar-brand" href="#" img>Home</a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-link" onclick="logout()">Log Out</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="container">
+                <div class="row col-md-6 col-md-offset-2 custyle">
+                <table class="table table-striped custab">
+                <thead>
+                <a href="#" class="btn btn-primary btn-xs pull-right" onclick="addTodoPage()"><b>+</b> Add todo</a>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Due Date</th>
+                        <th>Actions</th>
+                        <th></th>
+                    </tr>
+                </thead>
+    
+                <tbody class="table-body">
+    
+                </tbody>
+                        
+                </table>
+
+                <button onclick=window.location.href="http://localhost:3000/third-apis/movies" >Movie (third party API)</button>
+                </div>
+            </div>
+
+            <br><hr>
+    </section>
+
+    <!-- MOVIE API PAGE -->
+
+
+    <!-- ADD PAGE -->
+
+    <section class="add-page">
+        <br>
+            <button onclick="home()">Back</button>
+            <br><br>
+
+
+        <div class="container">
+            <div class="main">
+                <div class="main-center">
+                <h5>Add your Todo List here</h5>
+                    <form  onsubmit='addTodo(event)' action="">
+                        
+                        <div class="form-group">
+                            <label for="name">Title</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="title" id="title"  placeholder="Enter your Todo"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Description</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="description" placeholder="Enter your Todo description" id="description"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Due Date</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="due_date" id="due_date" placeholder="Enter your Due Date"/>
+                                </div>
+                        </div>
+
+                <button type="submit">SUBMIT</button>
+                        
+                    </form>
+                </div><!--main-center"-->
+            </div><!--main-->
+        </div><!--container-->
+
+
+    </section>
+
+    <!-- EDIT PAGE -->
+
+    <section class="edit-page">
+
+            <button onclick="home()">Back</button>
+
+            <br><br>
+
+        <div class="container">
+            <div class="main">
+                <div class="main-center">
+                <h5>Edit your Todos</h5>
+                    <form class="" method="post" action="#" onsubmit='editTodo(event)'>
+                        
+                        <div class="form-group">
+                            <label for="name">Title</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="title" id="title-edit" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Description</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="description"  id="description-edit"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Due Date</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="due_date" id="due_date-edit" />
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="status" id="status-edit" placeholder="Todo Status"/>
+                                </div>
+                        </div>
+
+                <button type="submit">SUBMIT</button>
+                        
+                    </form>
+                </div><!--main-center"-->
+            </div><!--main-->
+        </div><!--container-->
+
+
+    </section>
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
